@@ -19,6 +19,7 @@ using namespace std;
 
 Maze::Maze(int width, int height) {
   positions[width][height];
+  // not sure why height is unused
 }
 
 Maze::~Maze() {
