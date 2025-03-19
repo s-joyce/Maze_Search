@@ -27,6 +27,10 @@ int main() {
   //       4. display the solution path to the terminal 
   //       5. write the solution to the output file.
   //       4. output the path length and # of visited nodes
+  Maze* maze;
+  maze = loadMap(map);
+
+
 
   return 0;
 }

@@ -26,7 +26,7 @@ Maze::~Maze() {
 }
 
 int Maze::getWidth() {
-  throw runtime_error("Not yet implemented: Maze::getWidth");
+
 }
 
 int Maze::getHeight() {

@@ -5,7 +5,9 @@
 using namespace std;
 
 Position::Position(int x, int y) {
-  throw runtime_error("Not yet implemented: {Position::Position");
+  this->xPos = x;
+  this->yPos = y;
+  this->wall = false;
 }
 
 int Position::getX()  {
