@@ -18,7 +18,7 @@
 using namespace std;
 
 Maze::Maze(int width, int height) {
-  throw runtime_error("Not yet implemented: Maze::Maze");
+  positions[width][height];
 }
 
 Maze::~Maze() {
@@ -26,7 +26,7 @@ Maze::~Maze() {
 }
 
 int Maze::getWidth() {
-
+    throw runtime_error("Not yet implemented: Maze::~Maze");
 }
 
 int Maze::getHeight() {
