@@ -11,19 +11,19 @@ Position::Position(int x, int y) {
 }
 
 int Position::getX()  {
-  throw runtime_error("Not yet implemented: {Position::getX");
+  return this->xPos;
 }
 
 int Position::getY() {
-  throw runtime_error("Not yet implemented: {Position::getY");
+  return this->yPos;
 }
 
 void Position::setWall()  {
-  throw runtime_error("Not yet implemented: {Position::setWall");
+  this->wall = true;
 }
 
 bool Position::isWall()  {
-  throw runtime_error("Not yet implemented: {Position::isWall");
+  return this->wall;
 }
 
 string Position::to_string()  {
