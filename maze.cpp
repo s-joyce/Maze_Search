@@ -17,6 +17,11 @@
 
 using namespace std;
 
+/*
+*  Height = row = x
+*  width = colum = y
+*/
+
 Maze::Maze(int width, int height) {
   // allocating memory and initializing positions
   positions = new Position**[height];
@@ -40,14 +45,16 @@ Maze::~Maze() {
 }
 
 int Maze::getWidth() {
-    throw runtime_error("Not yet implemented: Maze::~Maze");  // need a getter in postion class same for the below 
+  return gety();
 }
 
 int Maze::getHeight() {
-  throw runtime_error("Not yet implemented: Maze::getHeight");
+  return getx();
 }
 
 bool Maze::isWall(int x, int y) {
+  if (positions[x][y] == "#")
+    // wall == true;
   throw runtime_error("Not yet implemented: Maze::isWall");
 }
 
