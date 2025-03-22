@@ -27,6 +27,5 @@ bool Position::isWall()  {
 }
 
 string Position::to_string()  {
-  throw runtime_error("Not yet implemented: {Position::isWall");
-  // clarify what to do here - spec is unclear
+  return to_string(xPos) + "," + to_string(yPos);
 }
