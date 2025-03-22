@@ -18,16 +18,29 @@
 using namespace std;
 
 Maze::Maze(int width, int height) {
-  positions[width][height];
-  // not sure why height is unused
+  // allocating memory and initializing positions
+  positions = new Position**[height];
+  for (int i = 0; i < height; i++{
+    positions[i] = new Position*[width];
+    for(int j = 0; j < width; i++){
+      positons[i][j] = new Position(i, j);
+    }
+  }
 }
 
+
 Maze::~Maze() {
-  throw runtime_error("Not yet implemented: Maze::~Maze");
+  for(int i = 0; i < height; i++;){
+    for(int j = 0; j < width; j++{
+      delete positions[i][j];  
+    }
+    delete positons[i]         
+  }
+  delete positions[j]
 }
 
 int Maze::getWidth() {
-    throw runtime_error("Not yet implemented: Maze::~Maze");
+    throw runtime_error("Not yet implemented: Maze::~Maze");  // need a getter in postion class same for the below 
 }
 
 int Maze::getHeight() {
